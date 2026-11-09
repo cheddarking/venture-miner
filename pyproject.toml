@@ -1,0 +1,20 @@
+[project]
+name = "venture-miner"
+version = "0.0.0"
+description = "Mine alphaXiv breakthroughs, match them to real market pain, emit scored startup opportunity briefs."
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
